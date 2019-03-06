@@ -12,15 +12,20 @@ if(isset($_SESSION['user']))
     <?php include 'head.php'; ?>
 </head>
 <body>
-	<div><img src="assets/images/logo-full.png" margin="auto"></div>
-	<h1>BE WARNED</h1>
+	<div><img src="assets/images/logo-full.png" margin="auto" class="logo"></div>
 	<div class="table-container">
-	<h4>Leaderboard.</h4>
-		<table>
+	<h1>Leaderboard.</h1>
+	<table cellpadding="12px 0">
+		<colgroup>
+			<col width=24px">
+			<col width=48px">
+			<col width=240px">
+			<col width=24px">
+		</colgroup>
 			<?php
 			$i=0;
  			$c=0;
-			$query="select name,email,pic,level from user order by level desc,last_time";
+			$query="select email,picture,level from users order by level desc,modified";
 			$results = mysqli_query($con,$query);
 		    	while ($row = mysqli_fetch_array($results))
 			{
@@ -29,8 +34,7 @@ if(isset($_SESSION['user']))
 				{
 					echo '<tr>
 					<td valign="middle">#'.$i.'</td>
-					<td valign="middle"><img src="'.$row['pic'].'" width="50" height="50"></td>
-					<td valign="middle">'.$row['name'].'</td>
+					<td valign="middle"><img src="'.$row['picture'].'" width="50" height="50"></td>
 					<td valign="middle">'.$row['email'].'</td>
 					<td valign="middle">'.$row['level'].'0</td>
 					</tr>';

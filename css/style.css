@@ -40,12 +40,24 @@ body{background-image:url("../assets/images/nk-bg.jpg");
       .logo{
       	justify-content: center;
       	display: flex;
+        height: 12rem;
+        width: auto;
         
       }
 
-      img{height: 20rem;
+      td{
+        width: 50%;
+        color: white;
+        font-size: 20px;
+      }
+
+      td img{
+        border-radius: 50%;
+      }
+
+      /*img{height: 20rem;
         
-      	 }
+      	 }*/
 
 .sign{
   justify-content: center;
