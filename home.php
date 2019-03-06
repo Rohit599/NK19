@@ -32,7 +32,7 @@ if(isset($_SESSION['user']))
       <a href="https://youtu.be/OhP9Sp0JGL8">How to play.</a><br>
       <a href="https://www.facebook.com/nightknitting/">Discussion Forum.</a><br>
       <a href="leadboard.php">Leaderboard.</a><br>
-      <a href="signout.php">Sign out.</a><br>
+      <a href="logout.php">Sign out.</a><br>
     </div>
   </body>
   </html>
