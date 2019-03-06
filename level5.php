@@ -23,7 +23,7 @@ if(isset($_SESSION['user']))
 	<body>
 
 		<div class="level">
-			<img src="assets/images/5svir" margin="auto">
+			<img src="assets/images/5svir.jpg" margin="auto">
 		</div>
 
 		<div class="input-type-answer" style="margin-top: 2rem;text-align: center;">
