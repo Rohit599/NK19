@@ -36,12 +36,15 @@ body {
     flex-direction: column;
 }
 
-.logo img{
+.logo {
     justify-content: center;
     display: flex;
     height: 12rem;
-    width: auto;
+}
 
+.logo img {
+    height: 12rem;
+    width: auto;
 }
 
 td {

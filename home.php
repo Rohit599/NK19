@@ -20,7 +20,7 @@ if(isset($_SESSION['user']))
     <?php include 'head.php'; ?>
   </head>
   <body>
-    <img src="assets/images/logo-full.png" class="logo">
+    <img src="assets/images/logo-full.png" class="logo" style="margin-bottom:2rem">
     <div class="sign">
       <a href="level<?php echo $user_level; ?>.php"><?php
           if($user_level==0)
