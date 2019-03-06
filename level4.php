@@ -36,7 +36,7 @@ if(isset($_SESSION['user']))
 	<html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/stylelevel.css">
-		<title>Confrontation | Night Knitting</title>
+		<title>Holy War | Night Knitting</title>
 		<?php include 'head.php'; ?>
 	</head>
 	<body style="background-color: black">

@@ -1,2 +1,12 @@
-.level{display: flex;
-justify-content: center;}
+body {
+	background-color: #000000;
+}
+
+a:visited {
+	color: white;
+}
+
+.level{
+	display: flex;
+	justify-content: center;
+}
