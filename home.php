@@ -20,7 +20,7 @@ if(isset($_SESSION['user']))
     <?php include 'head.php'; ?>
   </head>
   <body>
-    <img src="assets/images/logo-full.png">
+    <img src="assets/images/logo-full.png" class="logo">
     <div class="sign">
       <a href="level<?php echo $user_level; ?>.php"><?php
           if($user_level==0)
@@ -30,7 +30,7 @@ if(isset($_SESSION['user']))
           ?></a>
       <a style="margin-top: 1rem;" href="rule.php">Rules.</a><br>
       <a href="https://youtu.be/OhP9Sp0JGL8">How to play.</a><br>
-      <a href="https://www.facebook.com/nightknitting/">Discretion Forum.</a><br>
+      <a href="https://www.facebook.com/nightknitting/">Discussion Forum.</a><br>
       <a href="leadboard.php">Leaderboard.</a><br>
       <a href="logout.php">Sign out.</a><br>
     </div>
