@@ -1,7 +1,11 @@
 <head>
-    <title></title>
+    <title>Night Knitting</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <?php include 'head.php'; ?>
 </head>
+<audio volume="0.05" loop autoplay>
+  <source src="assets/audio/shinigami.mp3">
+</audio>
 <?php
 
 error_reporting(E_ALL);
