@@ -1,116 +1,119 @@
-@font-face{
-  font-family: bahnschrift;
-  src:url(../assets/font/bahnschrift._semibold.ttf);
-  font-weight: 700;
+@font-face {
+    font-family: bahnschrift;
+    src: url(../assets/font/bahnschrift._semibold.ttf);
+    font-weight: 700;
 }
 
-@font-face{
-  font-family: bahnschrift;
-  src:url(../assets/font/bahnschrift_bold.ttf);
-  font-weight: 900;
+@font-face {
+    font-family: bahnschrift;
+    src: url(../assets/font/bahnschrift_bold.ttf);
+    font-weight: 900;
 }
 
-@font-face{
-  font-family: bahnschrift;
-  src:url(../assets/font/bahnschrift_light.ttf);
-  font-weight: 300;
+@font-face {
+    font-family: bahnschrift;
+    src: url(../assets/font/bahnschrift_light.ttf);
+    font-weight: 300;
 }
 
 
-@font-face{
-  font-family: bahnschrift;
-  src:url(../assets/font/bahnschrift_reg.ttf);
-  font-weight: 500;
+@font-face {
+    font-family: bahnschrift;
+    src: url(../assets/font/bahnschrift_reg.ttf);
+    font-weight: 500;
 }
 
-body{background-image:url("../assets/images/nk-bg.jpg");
+body {
+    background-image: url("../assets/images/nk-bg.jpg");
     background-repeat: no-repeat;
-     background-size: cover;
-      height: 96%; 
-      background-position: center;
-      font-family: bahnschrift, Arial;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
+    background-size: cover;
+    height: 96%;
+    background-position: center;
+    font-family: bahnschrift, Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
-      .logo{
-      	justify-content: center;
-      	display: flex;
-        height: 12rem;
-        width: auto;
+.logo {
+    justify-content: center;
+    display: flex;
+    height: 12rem;
+    width: auto;
+
+}
+
+td {
+    width: 50%;
+    color: white;
+    font-size: 20px;
+}
+
+td img {
+    border-radius: 50%;
+}
+
+/*img{height: 20rem;
         
-      }
+        }*/
 
-      td{
-        width: 50%;
-        color: white;
-        font-size: 20px;
-      }
-
-      td img{
-        border-radius: 50%;
-      }
-
-      /*img{height: 20rem;
-        
-      	 }*/
-
-.sign{
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  flex-direction: column
- 
+.sign {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column
 }
 
 
 
-a{font-size: 1.75rem;
-  color: white;
-  font-weight: bold;
+a {
+    font-size: 1.75rem;
+    color: white;
+    font-weight: bold;
 
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 
 p {
-  color: #eeeeee;
-  font-size: 1.25rem;
-  margin-bottom: -0.5rem;
+    color: #eeeeee;
+    font-size: 1.25rem;
+    margin-bottom: -0.5rem;
 }
 
-h1{margin-top: 4rem
-  ;font-size: 1.75rem;
-  color: #eeeeee;
-display: flex;
-text-align: center;
-font-weight: 300;
+h1 {
+    margin-top: 4rem;
+    font-size: 1.75rem;
+    color: #eeeeee;
+    display: flex;
+    text-align: center;
+    font-weight: 300;
 
-justify-content: center;}
+    justify-content: center;
+}
 
 
-.form{
+.form {
     background-color: transparent;
-      text-decoration: none;
-      color: #ffffff;
-      padding: 5px 32px;
-      text-align: center;
-      display: block;
-      font-size: 14px;
-      margin: 4px 2px;
-      cursor: pointer;
-      border: 2px solid #fff;
-      width: 250px
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 32px;
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    width: 250px
 }
 
-.button{
-  background-color: white;
-  padding: .5rem;
-  color:red;
-  font-weight: bold;
-  font-size: 23px;
-  width: 270px
+.button {
+    background-color: white;
+    padding: .5rem;
+    color: red;
+    font-weight: bold;
+    font-size: 23px;
+    width: 270px
 }
