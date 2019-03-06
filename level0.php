@@ -1,8 +1,8 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+// error_reporting(E_ALL);
+// ini_set('display_errors', 1);
 session_start();
-include'config.php';
+// include'config.php';
 include 'conf.php';
 $thislevel=0;
 if(isset($_SESSION['user']))
@@ -60,9 +60,9 @@ if(isset($_SESSION['user']))
 	<button class="btn hidden" id="btn2" style="position: fixed;right: 24%; top: 300;" onclick="click2();">Click ME
 	</button>
 	<!-- till here-->
-    <div style="padding-top: 6rem; padding-left: 8rem; text-align: left;"><a href="home.php" style="font-size: 1.5rem; font-weight: bold; text-decoration: underline; position: fixed; bottom: 30; color: white;">Home.</a>
+    <div style="padding-top: 6rem; padding-left: 8rem; text-align: left;"><a href="home.php" style="font-size: 1.5rem; font-weight: bold; text-decoration: underline; position: fixed; bottom: 30;">Home.</a>
     </div>
-    <div style="padding-top: 6rem; "><a href="home.php" style="font-size: 1.5rem; font-weight: bold; text-decoration: underline; position: fixed; bottom: 30; right: 132; color: white;">Leaderboard.</a>
+    <div style="padding-top: 6rem; "><a href="home.php" style="font-size: 1.5rem; font-weight: bold; text-decoration: underline; position: fixed; bottom: 30; right: 132;">Leaderboard.</a>
  	</div>
 
 	<script type="text/javascript">

@@ -1,6 +1,6 @@
 <?php
 session_start();
-include'config.php';
+// include'config.php';
 include 'conf.php';
 $thislevel=1;
 if(isset($_SESSION['user']))

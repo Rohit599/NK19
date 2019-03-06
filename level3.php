@@ -1,8 +1,8 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+// error_reporting(E_ALL);
+// ini_set('display_errors', 1);
 session_start();
-include'config.php';
+// include'config.php';
 include 'conf.php';
 $thislevel=3;
 if(isset($_SESSION['user']))
@@ -27,7 +27,7 @@ if(isset($_SESSION['user']))
 
 	if($_GET['getme'] == "out")
 	{
-		$sql="UPDATE users SET level=3,modified='".date('Y-m-d H:i:s')."' WHERE email='".$_SESSION['user']."'";
+		$sql="UPDATE users SET level=4,modified='".date('Y-m-d H:i:s')."' WHERE email='".$_SESSION['user']."'";
 		$result=mysqli_query($con,$sql);
 		echo "<script>
 		window.location = 'level4.php';

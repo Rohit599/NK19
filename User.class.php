@@ -38,18 +38,10 @@ class User
                 // Update user data if already exists
                 $query = "UPDATE ".$this->userTbl." SET first_name = '".$userData['first_name']."', last_name = '".$userData['last_name']."', email = '".$userData['email']."', gender = '".$userData['gender']."', locale = '".$userData['locale']."', picture = '".$userData['picture']."', link = '".$userData['link']."', modified = NOW() WHERE oauth_provider = '".$userData['oauth_provider']."' AND oauth_uid = '".$userData['oauth_uid']."'";
                 $update = $this->db->query($query);
-                $sql="SELECT level FROM users WHERE email='".$userData['email']."'";
-                $ulevel = $this->db->query($sql);
-                if ($ulevel->num_rows > 0) {
-                    // output data of each row
-                    while ($row = $ulevel->fetch_assoc()) {
-                        $user_level = $row["level"];
-                    }
-                }
 
                 $_SESSION['user']=$userData['email'];
                 echo"<script type='text/javascript'>
-                window.location.href='level".$user_level.".php';
+                window.location.href='home.php';
                 </script>";
             } else {
                 // Insert user data in the database
