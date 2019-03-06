@@ -27,7 +27,6 @@ body {
     background-image: url("../assets/images/nk-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 96%;
     background-position: center;
     font-family: bahnschrift, Arial;
     display: flex;
@@ -47,10 +46,20 @@ body {
     width: auto;
 }
 
+.table-container {
+    height: 20rem;
+    overflow-y: auto;
+}
+
 td {
     width: 50%;
     color: white;
     font-size: 20px;
+    padding: 0.5rem 1rem;
+}
+
+td:nth-child(3) {
+    padding: 0 48px;
 }
 
 td img {

@@ -13,14 +13,9 @@ if(isset($_SESSION['user']))
 </head>
 <body>
 	<div><img src="assets/images/logo-full.png" margin="auto" class="logo"></div>
-	<div class="table-container">
 	<h1>Leaderboard.</h1>
+	<div class="table-container">
 	<table cellpadding="12px 0">
-		<colgroup>
-			<col width=48px">
-			<col width=48px">
-			<col width=240px">
-		</colgroup>
 			<?php
 			$i=0;
  			$c=0;
@@ -42,7 +37,7 @@ if(isset($_SESSION['user']))
 ?>
 </table>
 </div>
-<div style="text-align: left; margin-top: 4rem">
+<div style="text-align: left; padding: 4rem 0">
 	<a href="home.php">Home.</a>
 </div>
 </div>

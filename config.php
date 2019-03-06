@@ -5,8 +5,8 @@
 
 // Database configuration
 define('DB_HOST', 'localhost');
-define('DB_USERNAME', 'anant');
-define('DB_PASSWORD', 'account60');
+define('DB_USERNAME', 'rohit');
+define('DB_PASSWORD', 'rohit');
 define('DB_NAME', 'ncs_game');
 define('DB_USER_TBL', 'users');
 
