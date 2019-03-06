@@ -36,7 +36,7 @@ body {
     flex-direction: column;
 }
 
-.logo {
+.logo img{
     justify-content: center;
     display: flex;
     height: 12rem;
@@ -55,7 +55,7 @@ td img {
 }
 
 /*img{height: 20rem;
-        
+
         }*/
 
 .sign {
