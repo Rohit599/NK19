@@ -17,10 +17,9 @@ if(isset($_SESSION['user']))
 	<h1>Leaderboard.</h1>
 	<table cellpadding="12px 0">
 		<colgroup>
-			<col width=24px">
+			<col width=48px">
 			<col width=48px">
 			<col width=240px">
-			<col width=24px">
 		</colgroup>
 			<?php
 			$i=0;
@@ -43,7 +42,8 @@ if(isset($_SESSION['user']))
 ?>
 </table>
 </div>
-<div style="padding-top: 6rem; padding-left: 8rem; text-align: left;"><a href="home.php" style="font-size: 1.5rem; font-weight: bold; text-decoration: underline; position: fixed; bottom: 30;">Home.</a>
+<div style="text-align: left; margin-top: 4rem">
+	<a href="home.php">Home.</a>
 </div>
 </div>
 </body>
