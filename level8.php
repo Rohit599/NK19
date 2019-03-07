@@ -14,26 +14,26 @@ if(isset($_SESSION['user']))
 
 	include 'validate.php';
 
-	if($_POST['answer']=="699392")
+	if($_POST['answer']=="eyeofprovidence")
 	{
-		$sql="UPDATE users SET level=9,last_time='".date('Y-m-d H:i:s')."' WHERE email='".$_SESSION['user']."'";
+		$sql="UPDATE users SET level=9,modified='".date('Y-m-d H:i:s')."' WHERE email='".$_SESSION['user']."'";
 		$result=mysqli_query($con,$sql);
 		echo "<script>
-		window.location = 'level9.php';
+		window.location = 'level9.php?answer=';
 		</script>";
 		die();
 	}
 	?>
 	<html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/stylelevel.css">
 		<title> Night Knitting</title>
 		<?php include 'head.php'; ?>
 	</head>
 	<body style="background-color: black">
 
 		<div class="level">
-			<img src="assets/nk/9-base64.jpg">
+			<img src="assets/images/8rvtug.jpg">
 		</div>
 		
 		

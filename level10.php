@@ -3,15 +3,7 @@ session_start();
 include'config.php';
 $thislevel=10;
 if(isset($_SESSION['user']))
-{
-	if(!isset($_GET['reason']))
-	{
-		echo "<script>
-		window.location = 'level10.php?reason=';
-		</script>";
-		die();
-	}
-	
+{	
 	$sql="SELECT level FROM users WHERE email='".$_SESSION['user']."'";
 	$result=mysqli_query($con,$sql);
 	$user_level=mysqli_result($result,0);
