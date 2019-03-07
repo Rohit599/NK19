@@ -7,6 +7,16 @@ if(mysqli_connect_errno())
 
 date_default_timezone_set('Asia/Kolkata');
 
+$current_time=date('Hi');
+$lockStart=1000;
+$lockEnd=2200;
+if($lockStart < $current_time && $current_time < $lockEnd)
+{
+	include 'lock.php';
+	die();
+}
+
+
 ?>
 
 <audio volume="0.05" loop autoplay>

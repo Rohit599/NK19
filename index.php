@@ -1,3 +1,25 @@
+
+<?php
+
+// error_reporting(E_ALL);
+// ini_set('display_errors', 1);
+
+// Include configuration file
+require_once 'config.php';
+
+
+date_default_timezone_set('Asia/Kolkata');
+
+$current_time=date('Hi');
+$lockStart=1000;
+$lockEnd=2200;
+if($lockStart < $current_time && $current_time < $lockEnd)
+{
+    include 'lock.php';
+    die();
+}
+?>
+
 <head>
     <title>Night Knitting</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -7,13 +29,6 @@
   <source src="assets/audio/shinigami.mp3">
 </audio>
 <?php
-
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
-// Include configuration file
-require_once 'config.php';
-
 // Include User library file
 require_once 'User.class.php';
 
